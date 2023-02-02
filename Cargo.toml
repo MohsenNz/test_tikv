@@ -1,0 +1,23 @@
+[package]
+name = "test_tikv"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "workload"
+
+[[bin]]
+name = "put"
+
+[[bin]]
+name = "get"
+
+[[bin]]
+name = "key_order_test"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tikv-client = "0.1.0"
+tokio = { version = "*", features = ["full"] }
+rand = "*"
